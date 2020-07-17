@@ -1,9 +1,0 @@
-'''买卖股票的最佳时机 II'''
-class Solution:
-    def maxProfit(self, prices: List[int]) -> int:
-        max_profit = 0
-        n = len(prices)
-        for i in range(1,n):
-            if prices[i]>prices[i-1]:
-                max_profit = max_profit + (prices[i]-prices[i-1])
-        return max_profit
